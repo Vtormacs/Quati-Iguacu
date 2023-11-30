@@ -1,0 +1,9 @@
+<svg height="251" viewBox="0 0 1170 251" width="1170" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <clipPath id="a">
+        <path d="m5 0 1160 20a5 5 0 0 1 5 5v201a5 5 0 0 1 -5 5l-1160 20a5 5 0 0 1 -5-5v-241a5 5 0 0 1 5-5z" transform="translate(1700 8920)"/>
+    </clipPath>
+    <path d="m5 0 1160 20a5 5 0 0 1 5 5v201a5 5 0 0 1 -5 5l-1160 20a5 5 0 0 1 -5-5v-241a5 5 0 0 1 5-5z" fill="#913921"/>
+    <g clip-path="url(#a)" fill="none" transform="translate(-1700 -8920)">
+        <!-- ... outros elementos dentro do grupo ... -->
+    </g>
+</svg>

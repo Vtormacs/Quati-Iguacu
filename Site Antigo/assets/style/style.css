@@ -1,0 +1,261 @@
+/*Simple Slug Translate*/
+/*Google Language Translator*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #708868;
+}
+
+/* Estilos para o cabeçalho do site, incluindo o logotipo e o menu de navegação */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  background-color: #913921;
+}
+
+.container__menu {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+#imgLogo{
+  cursor: pointer;
+}
+
+.menu ul {
+
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 20px;
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover {
+  color: #fca814;
+}
+
+
+
+.btnbeta {
+  height: 3rem;
+  width: 10rem;
+  border-radius: 2rem;
+  transition: 0.3s;
+  box-shadow: 3px 2px #414827;
+  background-color: #913921;
+}
+
+.btnbeta:hover { /* Quando o mouse estiver em cima do botão */
+  height: 4rem;
+  width: 13rem;
+  font-size: 115%;
+  background-color: #913921;
+}
+
+.betaInvite {
+  color: #fca814;
+  text-decoration: none;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.cover {
+  padding: 100px;
+  text-align: center;
+}
+
+.text {
+  padding: 20px;
+}
+
+.slider-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info {
+  background-color: #fca814;
+}
+
+.CharacterImg {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #913921;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 10px;
+}
+
+.footer-text h1 {
+  color: #fff;
+  padding-top: 20px;
+  position: relative;
+}
+
+.menu-text-footer {
+  padding: 0;
+}
+
+.menu-text-footer ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-text-footer ul li {
+  margin-left: 20px;
+}
+
+.menu-text-footer ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu-text-footer ul li a:hover {
+  color: #fca814;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.social-media ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.social-media ul li {
+  margin-right: 20px;
+}
+
+.social-media ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-media ul li a:hover {
+  color: #f6615d;
+}
+
+.socialIcon {
+  /*Icone do Facebook*/
+  height: 30px;
+  width: 30px;
+}
+
+/* Botão do idioma */
+
+.language-selector {
+  display: flex;
+  position: relative;
+  left: 5;
+  top: -22px;
+}
+
+.IdiomaImagem {
+  border-radius: 100px;
+}
+
+nav .drop-down {
+  z-index: 1000;
+  /* Aumente este valor conforme necessário */
+  list-style: none;
+  overflow: hidden;
+  height: 130px;
+  background-color: #00000000;
+  font-family: Arial;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  position: absolute;
+  border-radius: 100px;
+}
+
+nav .drop-down li {
+  background-color: rgba(255, 255, 255, 0.136);
+}
+
+nav .drop-down.closed {
+  /* Quando alternado via jQuery, essa classe reduzirá a altura do ul que, em conjunto
+       com overflow: hidden definido no ul, ocultará todos os itens da lista, exceto o primeiro */
+  /* altura atual do li 38px + 5px de borda */
+  height: 40px;
+}
+
+nav .drop-down li a {
+  display: block;
+  padding: 10px;
+   }
+
